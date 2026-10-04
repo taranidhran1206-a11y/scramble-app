@@ -1,25 +1,44 @@
-# 🧩 Word Scramble Master (React Web App)
+# 🧩 Word Scramble Game (Web & CLI)
 
-An interactive, responsive Word Scramble game website built with React 18 and styled with Tailwind CSS.
+An interactive Word Scramble game featuring both a **Modern React Web App** and a **Python Terminal CLI Game**.
 
-## Features
-- **Modern React Architecture**: Pure React component with stateful tile picking, word bank, and guess validation.
-- **Interactive Tiles**: Click on letter tiles or type directly with your device's keyboard.
-- **Web Audio FX**: Synthesized chime, buzz, shuffle, and click sound effects via the Web Audio API (no external audio assets required).
-- **Celebration Effects**: Confetti cannon animation on successful solve.
+---
+
+## 🌐 1. React Web App
+
+Interactive browser game with a vibrant turquoise-and-sky-blue design.
+
+### Features
+- **Modern React 18 UI**: Responsive design with Tailwind CSS.
+- **Automatic Clue Display**: Helpful clue banner automatically presented for every word.
+- **Extra Hint System**: Optional first-letter reveal button.
+- **Synthesized Audio**: Web Audio API sound effects (correct chime, error buzzer, shuffle whoosh, tile click) without external audio files.
+- **Celebration Effects**: Confetti cannon animation on successful word solve.
 - **Multiple Categories**: Tech & Code, Animals, Space & Science, Everyday.
-- **Multi-stage Hints**: Clue description followed by starting letter reveal.
-- **Timer & Streaks**: Optional 30s countdown timer with speed bonus scoring, and win streak tracking.
-- **High Score**: Preserved in browser `localStorage`.
+- **Speed Bonus & Streaks**: 30-second timer bonus, streak multiplier, and local high score tracking.
+- **Keyboard Support**: Play using on-screen interactive letter tiles or your device keyboard.
 
-## Quick Start
-To launch the server and open the game in your browser:
+### Launching the Web Game
 ```bash
-cd ~/scramble-game-web
+# Option A: One-click launcher
 ./start.sh
+
+# Option B: Python HTTP server
+python3 -m http.server 8080
 ```
-Or manually run:
+Open **`http://localhost:8080`** in your browser.
+
+---
+
+## 💻 2. Python Terminal Game (`scramble_game.py`)
+
+Play the word scramble directly in your terminal console!
+
+### How to Run
 ```bash
-python3 -m http.server 8080 --directory ~/scramble-game-web
+python3 scramble_game.py
 ```
-Then visit: `http://localhost:8080`
+Commands during play:
+- Type your guess and press **Enter**
+- Type `hint` for category clue and first letter
+- Type `skip` to reveal the word and move to the next
