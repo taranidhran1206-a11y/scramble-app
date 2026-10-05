@@ -1,4 +1,5 @@
-# 🧩 Word Scramble Game (Web & CLI)
+<img width="500" height="500" alt="image-removebg-preview (5)" src="https://github.com/user-attachments/assets/65995ea3-5592-4cbd-9878-ca32bf202f7f" />
+ Word Scramble Game (Web & CLI)
 
 An interactive Word Scramble game featuring both a **Modern React Web App** and a **Python Terminal CLI Game**.
 
